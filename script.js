@@ -21,7 +21,6 @@ async function getPhotos() {
     photoArray = await response.json();
     createImageElement(photoArray);
     removeloader();
-    console.log(photoArray)
     
 }
 
