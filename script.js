@@ -1,7 +1,7 @@
 const imageContainer = document.querySelector("#image-container");
 const loader = document.querySelector("#loader");
 const count = 5;
-const client_id = 'Tt0oV6OCChbNGUGE3MQeRi2JBK0qNn6PhFnqodcHKOg';
+const client_id = '';
 const apiUrl = `https://api.unsplash.com/photos/random?count=${count}&client_id=${client_id}`
 let photoArray = []
 
