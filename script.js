@@ -1,6 +1,6 @@
 const imageContainer = document.querySelector("#image-container");
 const loader = document.querySelector("#loader");
-const count = 5;
+const count = 30;
 const client_id = 'Tt0oV6OCChbNGUGE3MQeRi2JBK0qNn6PhFnqodcHKOg';
 const apiUrl = `https://api.unsplash.com/photos/random?count=${count}&client_id=${client_id}`
 let photoArray = []
@@ -46,7 +46,7 @@ function createImageElement(photoArray) {
 
 
 window.addEventListener("scroll",()=>{
-    if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+    if (window.scrollY + window.innerHeight >= document.body.offsetHeight - 1000) {
         getPhotos();
     }
 })
