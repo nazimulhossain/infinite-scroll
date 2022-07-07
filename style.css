@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 html {
   box-sizing: border-box;
@@ -6,47 +6,19 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Playfair Display', serif;
+  font-family: Bebas Neue, sans-serif;
+  background: whitesmoke;
 }
 
-h1{
+h1 {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 15px;
-  font-size: 28px;
+  font-size: 40px;
   letter-spacing: 5px;
 }
 
-.image-container{
-  margin :10px 30%;
- 
-}
-
-img {
-  width:100%;
-  margin-top: 5px;
-}
-
-button {
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: italic;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  margin-left:40% ;
-  box-shadow: 2px 5px rgb(164, 148, 148);
-}
-
-button:active {
-  transform: translate(0, 0.3rem);
-  box-shadow: none;
-}
-
+/* Loader */
 .loader {
   position: fixed;
   top: 0;
@@ -63,15 +35,23 @@ button:active {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width:600px) {
-  .image-container{
-    margin :5px;
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone Vertical */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
   }
 
-  h1{
-    font-size: 22px;
+  .image-container {
+    margin: 10px;
   }
-
-
-  
 }
